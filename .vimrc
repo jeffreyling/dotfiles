@@ -58,3 +58,6 @@ nnoremap <leader>v :!open %:r.pdf &<CR><CR>
 
 " For Python
 nnoremap <leader>z :w<CR>:!python %<CR>
+
+" for matching if/end
+runtime macros/matchit.vim
