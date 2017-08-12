@@ -8,7 +8,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -36,6 +36,8 @@ set incsearch
 " for moving through long sentences
 nnoremap j gj
 nnoremap k gk
+vnoremap j gj
+vnoremap k gk
 
 " for convenient splitting of windows
 map <C-J> <C-W>j<C-W>_
