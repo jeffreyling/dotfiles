@@ -1,4 +1,3 @@
-
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -8,6 +7,8 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
+Plugin 'scrooloose/nerdcommenter'
+
 "Plugin 'Valloric/YouCompleteMe'
 
 " All of your Plugins must be added before the following line
@@ -15,8 +16,8 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 
 filetype plugin on
-set tabstop=2
-set shiftwidth=2
+set tabstop=4
+set shiftwidth=4
 set expandtab
 
 set backspace=2
@@ -63,3 +64,6 @@ nnoremap <leader>z :w<CR>:!python %<CR>
 
 " for matching if/end
 runtime macros/matchit.vim
+
+" literally stupid... rubber cannot find its own path...
+let PYTHONPATH="/Users/jeffreyling/my_root/lib/python2.7/site-packages:$PYTHONPATH"
