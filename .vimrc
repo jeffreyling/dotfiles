@@ -46,6 +46,9 @@ map <C-K> <C-W>k<C-W>_
 nmap <c-h> <c-w>h
 nmap <c-l> <c-w>l
 
+command W w
+command Wq wq
+
 set wildmode=longest,list
 
 set autowrite
@@ -66,4 +69,4 @@ nnoremap <leader>z :w<CR>:!python %<CR>
 runtime macros/matchit.vim
 
 " literally stupid... rubber cannot find its own path...
-let PYTHONPATH="/Users/jeffreyling/my_root/lib/python2.7/site-packages:$PYTHONPATH"
+let $PYTHONPATH .= ":/Users/jeffreyling/my_root/lib/python2.7/site-packages"
