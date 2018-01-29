@@ -11,6 +11,11 @@ Plugin 'scrooloose/nerdcommenter'
 
 Plugin 'ajh17/VimCompletesMe'
 
+Plugin 'xolox/vim-misc'
+Plugin 'xolox/vim-session'
+
+Plugin 'ctrlpvim/ctrlp.vim'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -57,16 +62,17 @@ au FocusLost * :wa
 " Linter
 set errorformat+=%f:%l:%m
 
-" LaTeX (rubber) macro for compiling
-nnoremap <leader>t :w<CR>:!rubber --pdf --warn all %<CR>
-" View PDF macro; '%:r' is current file's root (base) name.
-nnoremap <leader>v :!open %:r.pdf &<CR><CR>
-
 " For Python
 nnoremap <leader>z :w<CR>:!python %<CR>
 
 " for matching if/end
 runtime macros/matchit.vim
 
-" literally stupid... rubber cannot find its own path...
-let $PYTHONPATH .= ":/Users/jeffreyling/my_root/lib/python2.7/site-packages"
+" stuff for CtrlP
+if executable('ag')
+  " Use Ag over Grep
+  set grepprg=ag\ --nogroup\ --nocolor
+
+  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+endif
