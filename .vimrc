@@ -11,9 +11,6 @@ Plugin 'scrooloose/nerdcommenter'
 
 Plugin 'ajh17/VimCompletesMe'
 
-Plugin 'xolox/vim-misc'
-Plugin 'xolox/vim-session'
-
 Plugin 'ctrlpvim/ctrlp.vim'
 
 " All of your Plugins must be added before the following line
