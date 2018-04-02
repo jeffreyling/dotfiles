@@ -13,6 +13,8 @@ Plugin 'ajh17/VimCompletesMe'
 
 Plugin 'ctrlpvim/ctrlp.vim'
 
+Plugin 'Vimjas/vim-python-pep8-indent'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
