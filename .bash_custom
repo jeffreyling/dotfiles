@@ -7,3 +7,9 @@ git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Crese
 #export PS1="\\[\e[01;36m\\][\\u@\\h \\W]\\$ \\[\e[m\\]"
 #export PS1="\[\e]0;\u@\h: \w\a\]\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ "
 PROMPT="%F{green}%n@%m%f:%F{075}%~%f$ "
+
+alias g="git"
+alias gf="git fetch"
+alias gp="git pull"
+alias gc="git commit"
+alias gr="git rebase"
